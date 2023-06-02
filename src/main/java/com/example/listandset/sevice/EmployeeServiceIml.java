@@ -9,9 +9,8 @@ import java.util.List;
 
 public interface EmployeeServiceIml  {
     String startDisplay();
-    Employee addEmployee(String firstName, String lastName) throws EmployeeAlreadyAddedException, EmployeeStorageIsFullException;
-    boolean removeEmployee(String firstName, String lastName);
+    Employee addEmployee(String firstName, String lastName, int salary, int department) throws EmployeeAlreadyAddedException, EmployeeStorageIsFullException;
+    boolean removeEmployee(String firstName, String lastName, int salary, int department);
     Employee getEmployee(int i) throws EmployeeNotFoundException;
-
     public List<Employee> getAll();
 }
