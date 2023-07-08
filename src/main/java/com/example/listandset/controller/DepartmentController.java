@@ -13,7 +13,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/department")
 public class DepartmentController {
-    private EmployeeDepartment employeeDepartment;
+    private final EmployeeDepartment employeeDepartment;
     public DepartmentController(EmployeeDepartment employeeDepartment) {
         this.employeeDepartment = employeeDepartment;
     }
